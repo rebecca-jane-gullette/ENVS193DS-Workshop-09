@@ -20,3 +20,14 @@ I am reading in the data here (edit this later)
 data(pie_crab)
 ```
 
+I will visualize the data
+
+```{r}
+ggplot(aes(x = latitude, y = size),
+       data = pie_crab) + #creating plot
+  geom_point(color = "pink") + #scatterplot, pink points
+  labs(x = "Latitude", y = "Size") + #update axis labels
+  theme_minimal() #update theme to not have grid
+
+```
+
