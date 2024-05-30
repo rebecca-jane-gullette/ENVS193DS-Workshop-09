@@ -41,5 +41,20 @@ par(mfrow = c(2,2)) # display plots in 2x2 grid
 plot(crab_model) # plot diagnostics 
 ```
 
+run the model and interpret
+
+```{r}
+summary(crab_model) #look at model output
+```
+
+summarize our results:
+
+slope: 0.49
+y-intercept: -3.6 +/- 1.27
+
+for every 1 increase in latitude, we expect to see a 0.49 increase in crab size +/- 0.034 mm.
+
+model statistics: F(1,390) = 208.5, p < 0.001, alpha = 0.05, r^2^ = 0.35
+
 
 
