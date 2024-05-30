@@ -14,7 +14,7 @@ library(here) #for easy file paths
 
 ```
 
-I am reading in the data here (edit this later)
+Reading in data
 
 ```{r}
 data(pie_crab)
@@ -30,4 +30,16 @@ ggplot(aes(x = latitude, y = size),
   theme_minimal() #update theme to not have grid
 
 ```
+
+Wrtitng a model here: 
+
+```{r}
+crab_model <- lm(size ~ latitude, # formula: response ~ predictor
+                 data = pie_crab) # data frame
+
+par(mfrow = c(2,2)) # display plots in 2x2 grid
+plot(crab_model) # plot diagnostics 
+```
+
+
 
